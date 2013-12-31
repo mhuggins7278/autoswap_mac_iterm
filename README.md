@@ -4,7 +4,7 @@ Created by [Damian Conway](https://github.com/thoughtstream)
 Modified to work with iterm2 instead of mac terminal
 ## The automatic behaviour
 
-Find if the file already open in another Vim session in some other Terminal window. 
+Find if the file already open in another Vim session in some other iTerm window. 
 If so, go there instead and terminate this attempt to open the file. 
 Otherwise, if swapfile is older than file itself, just get rid of it.
 Otherwise, open file read-only.
@@ -14,7 +14,9 @@ Make sure show current job name is checked in the iterm preferences under appear
 
 in your vimrc add these lines
 set t_ts=^[]1;
+
 set t_fs=^G
+
 let &titleold='Shell'
 
 
