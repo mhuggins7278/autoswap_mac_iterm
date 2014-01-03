@@ -21,6 +21,7 @@ set t_ts=^[]1;
 set t_fs=^G
 
 Type CTRL-V Escape for ^[ and CTRL-V CTRL-G for ^G.
+
 let &titleold='Shell'
 
 
