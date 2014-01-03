@@ -92,7 +92,7 @@ endfunction
 "  or else return an empty string to indicate "no active window")...
 "
 function! AS_M_DetectActiveWindow (filename)
-    let script = s:path . '/bin/vim_iterm_find_session.scpt' 
+    let script = s:path . '/bin/vim_iterm_find_session.applescript' 
     let shortname = fnamemodify(a:filename,":t")
     let active_window = system('osascript "'.script.'" "'.shortname.'" ')
     let active_window = substitute(active_window, ',', '', '')

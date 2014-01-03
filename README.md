@@ -13,12 +13,11 @@ Otherwise, open file read-only.
 Make sure show current job name is checked in the iterm preferences under appearance
 
 in your vimrc add these lines
+
 set title titlestring=
-
 set t_ts=^[]1;
-
 set t_fs=^G
-
+Type CTRL-V Escape for ^[ and CTRL-V CTRL-G for ^G.
 let &titleold='Shell'
 
 
